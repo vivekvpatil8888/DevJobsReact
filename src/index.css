@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*
+=================
+Variables
+==================
+*/
+:root {
+  /* dark theme colors */
+  --Dark-Blue: #131822;
+  --Light-Blue: #19212d;
+  /* light theme colors */
+  --Purple: #5865e0;
+  --Light-Gray: #f5f6f8;
+  --White: #ffffff;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.grid {
+  display: flex; /* establish flex container */
+  flex-wrap: wrap; /* enable flex items to wrap */
+  justify-content: space-around;
+}
+.job {
+  flex: 0 0 32%;
+  height: 200px;
+  width: 150px;
+  margin-bottom: 10px;
+  background-color: var(--White);
+  border-radius: 5px;
+  text-align: left;
+}
+.cell:nth-child(3n) {
+  background-color: var(--Purple);
+}
+
+@media (max-width: 800px) {
+  .job {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+#searchform > form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+body {
+  background-color: var(--Light-Gray);
+}
+
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
