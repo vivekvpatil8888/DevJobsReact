@@ -1,4 +1,4 @@
-# Its live now!
+# It is Live Now!
 
 At : https://devjobs-react.netlify.app/
 
